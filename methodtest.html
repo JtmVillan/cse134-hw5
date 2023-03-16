@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Part 1 - HTTP with JavaScript</title>
+    <link rel="stylesheet" href="methodtest.css">
+</head>
+<body>
+    <form>
+        <label for="id">Record ID:</label>
+        <input type="number" id="id" name="id"><br><br>
+        
+        <label for="article_name">Article Name:</label>
+        <input type="text" id="article_name" name="article_name"><br><br>
+        
+        <label for="article_body">Article Body:</label>
+        <textarea id="article_body" name="article_body"></textarea><br><br>
+        
+        <input type="hidden" id="date" name="date">
+        
+        <label for="requestType">Request Type:</label>
+        <select id="requestType">
+          <option value="fetch">Fetch API</option>
+          <option value="xmlhttprequest">XMLHttpRequest</option>
+        </select><br><br>
+        
+        <button type="button" id="postBtn">POST</button>
+        <button type="button" id="getBtn">GET</button>
+        <button type="button" id="putBtn">PUT</button>
+        <button type="button" id="deleteBtn">DELETE</button>
+
+    </form>
+
+    <div> 
+        <output id="response"></output>
+    </div>
+    <script src="callEndpoints.js"></script>
+</body>
+</html>
